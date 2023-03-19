@@ -2,7 +2,7 @@
 
 def parallel_processing(n, m, data):
     output = []
-    threads = [[0, ] for i in range(n)]
+    threads = [[0, i] for i in range(n)]
 
     for i in range(m):
         time = data[i]
